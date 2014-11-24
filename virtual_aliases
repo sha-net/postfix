@@ -1,0 +1,15 @@
+# maps to example.com to example.net which may be 
+# local (a local virtual_mailbox_domain) or remote
+#joe@example.com joe@example.net
+root@localhost shavit@github.test
+
+# maps to multiple delivery mailboxes
+#sales@example.com fred@example.com,bill@example.com
+
+# maps to a local system mailbox
+#sharon@example.com sharon
+root shavit@github.test
+
+# maps any other mailbox to any@example.com
+#@example.com any@example.com
+@testdomain.com shavit@github.test

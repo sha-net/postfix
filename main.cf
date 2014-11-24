@@ -1,0 +1,9 @@
+smtp_sasl_security_options = noanonymous
+relayhost = [smtp.gmail.com]:587
+smtp_use_tls = yes
+smtp_tls_CAfile = /etc/postfix/cacert.pem
+smtp_sasl_auth_enable = yes
+smtp_sasl_password_maps = hash:/etc/postfix/googleapps/password
+virtual_alias_domains = domaintest.com
+virtual_alias_maps = hash:/etc/postfix/virtual_aliases
+mynetworks = 0.0.0.0/0
